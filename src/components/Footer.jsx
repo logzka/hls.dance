@@ -3,9 +3,9 @@ import * as React from "react"
 import Container from "./Container"
 import Logo from "./Logo"
 
-const Header = () => {
+const Footer = () => {
   return (
-    <header className="header fixed w-full top-0 backdrop-blur-xs">
+    <footer className="footer bg-dark">
       <Container className="flex items-center justify-between">
       <Logo />
       <nav>
@@ -15,10 +15,10 @@ const Header = () => {
           </li>
         </ul>
       </nav>
-      <a href="tel:+79604867349" className="text-accent text-sm">+7 960 486 73 49</a>
+      <a href="tel.:77777777777" className="text-accent text-sm">+7 777 7777 77 7</a>
       </Container>
-    </header>
+    </footer>
   )
 }
 
-export default Header;
+export default Footer;

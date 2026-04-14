@@ -2,3 +2,7 @@
 @layer theme;
 @import "./theme.css" layer(theme);
 
+html {
+    scroll-behavior: smooth;
+}
+
