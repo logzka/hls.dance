@@ -1,0 +1,34 @@
+{
+  "name": "logzka.hls.dance",
+  "version": "1.0.0",
+  "private": true,
+  "description": "logzka.hls.dance",
+  "author": "Anastasiia Davydova",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "@nathanpate/gatsby-omni-font-loader": "^2.0.5",
+    "@tailwindcss/postcss": "^4.2.1",
+    "autoprefixer": "^10.4.27",
+    "gatsby": "^5.14.6",
+    "gatsby-plugin-google-gtag": "^5.16.0",
+    "gatsby-plugin-image": "^3.16.0",
+    "gatsby-plugin-manifest": "^5.16.0",
+    "gatsby-plugin-sharp": "^5.16.0",
+    "gatsby-plugin-sitemap": "^6.16.0",
+    "gatsby-source-filesystem": "^5.16.0",
+    "gatsby-transformer-sharp": "^5.16.0",
+    "postcss": "^8.5.8",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwindcss": "^4.2.1"
+  }
+}
