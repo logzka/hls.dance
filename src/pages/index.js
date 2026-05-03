@@ -4,18 +4,14 @@ import Container from "../components/Container"
 import Hero from "../components/Hero"
 import Footer from "../components/Footer"
 import BlurText from "../components/BlurText"
+import Offline from "../components/Offline"
 
 const IndexPage = () => {
   return (
     <main className="font-base font-montserrat-alternates bg-dark min-h-screen text-slate-50">
       <Header />
       <Hero />
-      <section id="offline" className="bg-accent">
-        <Container>
-          <h2 className="text-dark text-6xl mb-16">offline</h2>
-          <div>Анапа | Москва</div>
-        </Container>
-      </section>
+      <Offline />
       <section id="online" className="relative">
         <Container><h2 className="text-accent text-6xl">online</h2></Container>
         <BlurText />

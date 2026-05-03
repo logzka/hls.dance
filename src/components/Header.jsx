@@ -1,21 +1,16 @@
-import { Link } from "gatsby"
 import * as React from "react"
+import HoverElement from "./common/HoverElement"
 import Container from "./Container"
 import Logo from "./Logo"
+import Nav from "./Nav"
 
 const Header = () => {
   return (
-    <header className="header fixed w-full top-0 backdrop-blur-xs">
+    <header className="header fixed z-50 w-full top-0 bg-dark/60 backdrop-blur-xs">
       <Container className="flex items-center justify-between">
       <Logo />
-      <nav>
-        <ul>
-          <li className="uppercase text-xs">
-            <Link to="/">блог</Link>
-          </li>
-        </ul>
-      </nav>
-      <a href="tel:+79604867349" className="text-accent text-sm">+7 960 486 73 49</a>
+      <Nav />
+      <HoverElement><a href="tel:+79604867349" className="text-green-300 uppercase text-sm">просто позвони</a></HoverElement>
       </Container>
     </header>
   )

@@ -2,7 +2,7 @@ import * as React from "react"
 
 const Button = ({children}) => {
   return (
-   <button className="cursor-pointer hover:opacity-80 border-8 font-bold border-accent rounded-sm py-8 px-16">{children}</button>       
+   <button className="cursor-pointer border-8 font-bold border-accent rounded-sm py-8 px-16">{children}</button>       
   )
 }
 
