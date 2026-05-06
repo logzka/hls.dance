@@ -9,7 +9,7 @@ const Footer = () => {
       <Container className="flex items-center justify-between">
       <Logo />
       <Nav />
-      <a href="tel.:77777777777" className="text-accent text-sm">+7 777 7777 77 7</a>
+      <a href="tel.:+79604867349" className="text-accent text-sm">+7 (960) 486 73 49</a>
       </Container>
     </footer>
   )

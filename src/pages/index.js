@@ -1,10 +1,9 @@
 import * as React from "react"
 import Header from "../components/Header"
-import Container from "../components/Container"
 import Hero from "../components/Hero"
 import Footer from "../components/Footer"
-import BlurText from "../components/BlurText"
 import Offline from "../components/Offline"
+import Online from "../components/Online"
 
 const IndexPage = () => {
   return (
@@ -12,11 +11,7 @@ const IndexPage = () => {
       <Header />
       <Hero />
       <Offline />
-      <section id="online" className="relative">
-        <Container><h2 className="text-accent text-6xl">online</h2></Container>
-        <BlurText />
-      </section>
-
+      <Online />
       <Footer />
     </main>
   )

@@ -17,12 +17,13 @@ const Hero = () => {
       <section className="hero h-screen">
         <Video video={video.publicURL} showOverlay />
         <Container className="relative h-full flex flex-col items-center justify-center">
-          <h1 className="text-center text-8xl mb-16"><span className="text-green-300">хочу</span>танцевать</h1>
+          <h1 className="text-center text-8xl mb-16"><span className="text-accent">хочу</span>танцевать</h1>
           <div className="flex items-center justify-center gap-8 text-green-300">
             <Link to="#online"><HoverElement><Button><span className="text-2xl">online</span></Button></HoverElement></Link>
             <Link to="#offline"><HoverElement><Button><span className="text-2xl">offline</span></Button></HoverElement></Link>
           </div>
         </Container>
+        <div className="absolute right-32 -bottom-4 bg-yellow-100 shadow-lg shadow-green-300/40 transition-all cursor-pointer hover:rotate-0 hover:shadow-none rotate-15 rounded-full px-8 py-4 flex items-center justify-center"><p className="text-center font-bold uppercase text-accent">Пробное<br/>бесплатно</p></div>
       </section>
   )
 }

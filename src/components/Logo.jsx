@@ -7,11 +7,11 @@ const Logo = () => {
       <div className="logo font-medium lg:text-lg">
         <HoverElement>
             <Link to='/'>
-            <span className="uppercase text-accent">logzka mëda dance</span>
-        <br />
-        <span className="font-light text-sm">
-        <span className="text-green-300">_танцы на каблуках</span> и не только_
-        </span></Link>
+              <span className="uppercase text-yellow-100 block leading-0 mb-1">logzka mëda dance</span>
+              <span className="font-light text-sm">
+                <span className="text-green-300">_танцы на каблуках</span> и не только_
+              </span>
+          </Link>
         </HoverElement>
       </div>
   )
