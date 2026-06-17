@@ -2,4 +2,16 @@
     --font-montserrat-alternates: Montserrat Alternates, sans-serif;
     --color-dark: #131700;
     --color-accent: #FF00B3;
+    --animate-menu: menu 0.2s ease-out;
+
+    @keyframes menu {
+      0% {
+        transform: translateY(1000px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
   }

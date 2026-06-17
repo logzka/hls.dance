@@ -17,11 +17,13 @@ const Header = () => {
     };
   }, []);
   return (
-    <header className={`header fixed z-50 w-full transition-all top-0 ${scrollOffset ? 'bg-dark/60 backdrop-blur-xs' : ''}`}>
-      <Container className="flex items-center justify-between">
-      <Logo />
-      <Nav />
-      <HoverElement><a href="tel:+79604867349" className="text-accent uppercase text-sm">просто позвони</a></HoverElement>
+    <header className={`header fixed z-40 w-full transition-all top-0 ${scrollOffset ? 'bg-dark/60 backdrop-blur-xs' : ''}`}>
+      <Container className="">
+        <div className="header--inner flex items-center justify-between">
+          <Logo />
+          <Nav />
+          <HoverElement className="hidden sm:block"><a href="tel:+79604867349" className="text-accent uppercase text-sm">просто позвони</a></HoverElement>
+        </div>
       </Container>
     </header>
   )

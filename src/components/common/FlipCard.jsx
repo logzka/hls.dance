@@ -4,7 +4,7 @@ import { FlipContext } from '../../context/flip.context';
 import { useSpring, a } from '@react-spring/web';
 
 const FlipCard = ({
-  className = 'w-full h-[440px]',
+  className = 'w-full h-[660px] sm:h-[440px]',
   index,
   frontChild,
   backChild,

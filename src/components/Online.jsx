@@ -1,11 +1,14 @@
 import * as React from "react"
 import Container from "../components/Container"
 import BlurText from "../components/BlurText"
+import SectionTitle from "./SectionTitle"
 
 const Online = () => {
   return (
       <section id="online" className="relative">
-        <Container><h2 className="text-accent text-6xl">online занятия</h2></Container>
+        <Container>
+          <SectionTitle>online занятия</SectionTitle>
+        </Container>
         <BlurText />
       </section>
   )

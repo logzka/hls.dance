@@ -4,11 +4,16 @@ import Hero from "../components/Hero"
 import Footer from "../components/Footer"
 import Offline from "../components/Offline"
 import Online from "../components/Online"
+import Menu from "../components/Menu"
+import { MenuContextProvider } from '../context/menu.context';
 
 const IndexPage = () => {
   return (
     <main className="font-base font-montserrat-alternates bg-dark min-h-screen text-slate-50">
-      <Header />
+      <MenuContextProvider>
+        <Header />
+        <Menu />
+      </MenuContextProvider>
       <Hero />
       <Offline />
       <Online />
