@@ -10,14 +10,14 @@ const Video = ({
   overlayStyle?: {};
 }) => {
   return (
-    <div className="video absolute left-0 top-0 min-w-full min-h-full">
+    <div className="video absolute left-0 top-0 min-w-full h-[50vh] sm:h-[75vh] md:h-screen">
       <video
         autoPlay
         loop
         muted
         playsInline
         controls={false}
-        className="w-full h-screen object-cover"
+        className="w-full h-full object-cover"
       >
         <source src={video} type="video/mp4" />
         Your browser does not support the video tag.

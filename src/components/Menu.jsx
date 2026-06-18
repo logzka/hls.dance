@@ -1,9 +1,10 @@
 import React from 'react';
-import { Link } from 'gatsby';
 import { MenuContext } from '../context/menu.context';
 import Container from './Container';
 import HoverElement from "./common/HoverElement";
 import ArticleTitle from './ArticleTitle';
+import NavList from './NavList';
+import CallMeMaybe from './CallMeMaybe';
 
 const Menu = () => {
   const { open, setOpen } = React.useContext(MenuContext);
@@ -41,18 +42,12 @@ const Menu = () => {
         background: 'radial-gradient(circle at center, #FF00B3, #131700 128%)',
       }}
     >
-      <Container className="menu--container">
-        <HoverElement><span onClick={() => setOpen(false)} className="menu-burger text-4xl sm:hidden opacity-70">&times;</span></HoverElement>
-
-        <ul className="mx-auto grid w-fit gap-2 text-sm mb-16">
-            <li className="">
-                <HoverElement><Link to="/">Блог</Link></HoverElement>
-            </li>
-            <li className="">
-                <HoverElement><Link to="/">Pасписание</Link></HoverElement>
-            </li>
-        </ul>
-        <HoverElement className='w-fit mx-auto'><ArticleTitle className='text-dark bg-green-300 rounded-sm w-fit'><a href="tel:+79604867349" className="uppercase">просто позвони</a></ArticleTitle></HoverElement>
+      <Container className="menu--container grid gap-16">
+        <HoverElement className='justify-self-end'><button onClick={() => setOpen(false)} className="menu-burger text-5xl opacity-70">&times;</button></HoverElement>
+        <NavList className='mx-auto grid w-fit gap-2 sm:text-xl' />
+        <CallMeMaybe className='w-fit mx-auto'>
+          <ArticleTitle className='text-dark bg-green-300 rounded-sm w-fit uppercase'>просто позвони</ArticleTitle>
+        </CallMeMaybe>
       </Container>
     </div>
   );

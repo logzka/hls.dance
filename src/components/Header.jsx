@@ -1,9 +1,9 @@
 import * as React from "react"
-import HoverElement from "./common/HoverElement"
 import Container from "./Container"
 import Logo from "./Logo"
 import Nav from "./Nav"
 import _throttle from 'lodash/throttle';
+import CallMeMaybe from "./CallMeMaybe"
 
 const Header = () => {
   const [scrollOffset, setScrollOffset] = React.useState(false);
@@ -22,7 +22,7 @@ const Header = () => {
         <div className="header--inner flex items-center justify-between">
           <Logo />
           <Nav />
-          <HoverElement className="hidden sm:block"><a href="tel:+79604867349" className="text-accent uppercase text-sm">просто позвони</a></HoverElement>
+          <CallMeMaybe className="hidden lg:block"><span className="text-accent uppercase">просто позвони</span></CallMeMaybe>
         </div>
       </Container>
     </header>

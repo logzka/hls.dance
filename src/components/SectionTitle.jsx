@@ -1,7 +1,7 @@
 import React from "react";
 
 const SectionTitle = ({children}) => {
-    return <h2 className="text-accent text-4xl sm:text-6xl">{children}</h2>
+    return <h2 className="text-accent text-4xl sm:text-5xl md:text-6xl">{children}</h2>
 }
 
 export default SectionTitle;
